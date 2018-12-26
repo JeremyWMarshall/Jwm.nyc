@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var _containerHeight = 4000;
 var _width, _height, _scrollHeight;
 var letters = document.getElementsByTagName('span');
@@ -107,3 +108,4 @@ function prefix() {
     js: pre[0].toUpperCase() + pre.substr(1)
   };
 }
+});
