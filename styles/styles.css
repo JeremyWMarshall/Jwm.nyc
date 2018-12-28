@@ -1,3 +1,25 @@
+.marvel{
+  /* background-image: url('../img/f_marvel/marvel_bg_alt.svg'); */
+  background-image:linear-gradient(#BE2A2A, #9E2323 50%, #8F2020 80%, #B62827);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.marvel_text{
+color: white;
+font-size:calc(12px + 1.3vw);
+letter-spacing: 3px;
+margin-bottom: 5px;
+}
+
+.marvel_subtext{
+color: white;
+font-size:calc(12px + 1.5vw);
+letter-spacing: 1px;
+margin-top: 20px;
+}
+
+
 .body {
   height:2000px;
 }
@@ -7,13 +29,27 @@
 }
 
 .slant {
-  width: 90vw;
-  height: 200vh;
-  margin-left:-70vw;
-  background: linear-gradient(-80deg, black 60%, #F6F638 85%, black 95%);
+  z-index:0;
+  width: 130vw;
+  height: 300vh;
+  margin-left: -110vw;
+  margin-top:-100vh;
+  background: linear-gradient(90deg, black, #272626 80%, black);
+  box-shadow: 2px 2px 35px black;
 }
 
 .hero {
-    height: 100vh;
-    overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
+
+.hero_content{
+  text-align:center;
+  position:relative;
+  z-index:2;
+}
+
+.vertical_center{
+  margin-top:25vh;
+}
+/*     background: linear-gradient(90deg, black 50%, #333232 80%, black 95%);
