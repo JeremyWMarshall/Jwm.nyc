@@ -1,3 +1,36 @@
+/*GLOBAL STYLES*/
+
+  /*Navbar  - Edits made to the Bootstrap Nav*/
+  .navbar-toggler{
+  margin-right: -50px;
+  border-color: rgba(0,0,0,0)! important;
+  border-radius: 1px;
+  border-width: 1px;
+  }
+
+  .navbar-toggler:focus {
+      outline: 0! important;
+  }
+
+  .navbar-default{
+  background: rgba(0,0,0,.6) ! important;
+  }
+
+  .navbar .navbar-brand{
+    color:#FFF;
+  }
+
+  .navbar .navbar-brand:hover{
+    color:#FFF;
+  }
+
+  .navbar .navbar-nav li a{
+    color:#FFF ! important;
+    padding-left: 18px;
+  }
+
+
+
 .marvel{
   /* background-image: url('../img/f_marvel/marvel_bg_alt.svg'); */
   background-image:linear-gradient(#BE2A2A, #9E2323 50%, #8F2020 80%, #B62827);
