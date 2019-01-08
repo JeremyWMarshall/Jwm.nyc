@@ -1,9 +1,14 @@
 /*GLOBAL STYLES*/
 
   /*Navbar  - Edits made to the Bootstrap Nav*/
+.nav-link{
+padding: 10px 25px 10px 25px ! important;
+font-size: 17px;
+}
+
   .navbar-toggler{
   margin-right: -50px;
-  border-color: rgba(0,0,0,0)! important;
+  border-color: rgba(0,0,0,0)! important;   /*This is for that box around the hanburger menu, bro*/
   border-radius: 1px;
   border-width: 1px;
   }
@@ -13,20 +18,26 @@
   }
 
   .navbar-default{
-  background: rgba(0,0,0,.8) ! important;
+  background: rgba(0,0,0,.6) ! important;
+  letter-spacing: 6px;
   }
 
   .navbar .navbar-brand{
-    color:#FFF;
+    color:#C1C3C0;
   }
 
   .navbar .navbar-brand:hover{
     color:#FFF;
   }
 
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #FFFFFF ! important;
+  }
+
   .navbar .navbar-nav li a{
-    color:#FFF ! important;
-    padding-left: 18px;
+    color:#C1C3C0 ! important;
+    margin-left: -9px;
+
   }
 
 
