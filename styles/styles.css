@@ -1,13 +1,15 @@
 /*GLOBAL STYLES*/
 
-  /*Navbar  - Edits made to the Bootstrap Nav*/
-.nav-link{
-padding: 10px 25px 10px 25px ! important;
-font-size: 17px;
-}
+/*Navbar  - Edits made to the Bootstrap Nav*/
+  /* The .nav-link class controls Home and Contact*/
+  .nav-link{
+  padding: 10px 25px 10px 25px ! important;
+  font-size: 17px;
+  }
 
   .navbar-toggler{
-  margin-right: -50px;
+  margin-left: -10px;
+  margin-right: -70px;
   border-color: rgba(0,0,0,0)! important;   /*This is for that box around the hanburger menu, bro*/
   border-radius: 1px;
   border-width: 1px;
@@ -19,12 +21,16 @@ font-size: 17px;
 
   .navbar-default{
   background: rgba(0,0,0,.6) ! important;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   }
 
+  /* This controls the "JEREMY MARSHALL" text */
   .navbar .navbar-brand{
-    color:#C1C3C0;
+    color:#DCDCDC;
+    font-size:17px;
+    padding-left: 25px;
   }
+
 
   .navbar .navbar-brand:hover{
     color:#FFF;
@@ -35,18 +41,20 @@ font-size: 17px;
   }
 
   .navbar .navbar-nav li a{
-    color:#C1C3C0 ! important;
+    color:#DCDCDC ! important;
     margin-left: -9px;
 
   }
 
 
-
+/*STYLES SPECIFIC TO JWM.NYC/MARVEL*/
 .marvel{
   /* background-image: url('../img/f_marvel/marvel_bg_alt.svg'); */
   background-image:linear-gradient(#BE2A2A, #9E2323 50%, #8F2020 80%, #B62827);
   background-size: cover;
   background-repeat: no-repeat;
+  min-height:500px;
+  height:100vh;
 }
 
 .marvel_text{
@@ -77,13 +85,12 @@ margin-top: 20px;
   width: 130vw;
   height: 300vh;
   margin-left: -110vw;
-  margin-top:-100vh;
+  margin-top:-100%;
   background: linear-gradient(90deg, black, #272626 80%, black);
   box-shadow: 2px 2px 35px black;
 }
 
 .hero {
-  height: 100vh;
   overflow: hidden;
 }
 
