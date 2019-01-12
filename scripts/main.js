@@ -1,7 +1,7 @@
 $(document).ready(function(){
 var _containerHeight = 4000;
 var _width, _height, _scrollHeight;
-var letters = document.getElementsByTagName('span');
+var letters = document.getElementsByTagName('spin');
 var _movingElements = [];
 var _scrollPercent = 0;
 var pre = prefix();
@@ -10,7 +10,7 @@ if(_jsPrefix == 'moz') _jsPrefix = 'Moz'
 var _cssPrefix = pre.css;
 var _positions = [
   {
-    name: 'slant',
+    name: 'slant_slider',
    	start: {
     	percent: 0.002, x: 0, y: 0.00
   	},
@@ -32,7 +32,7 @@ function initMovingElements() {
     }
     _positions[i].target = {};
     _positions[i].current = {};
-    var el = document.getElementsByClassName('slant '+_positions[i].name)[0];
+    var el = document.getElementsByClassName('slant_slider '+_positions[i].name)[0];
     _movingElements.push(el);
   }
 }
