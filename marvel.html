@@ -4,15 +4,22 @@
   <title>Hello!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+  <link rel="stylesheet" href="https://use.typekit.net/pvi6jrp.css"> <!--Proxima Nova Font from Adobe -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/styles.css">
+
+  <!--CSS file for Parallax Scroll Plugin-->
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
+
+  <!--JS file for Parallax Scroll Plugin-->
+  <script src="plugins/paroller/dist/jquery.paroller.min.js"></script>
+
 
 </head>
 
@@ -35,16 +42,16 @@
 </nav>
 
 <div class="body">
-  <div class="hero marvel">
+  <div class="hero marvel paroller" data-paroller-factor="0" data-paroller-type="background" data-paroller-direction="vertical">
 
-    <div class="hero_content container-fluid">
-      <div class="row h-100">
-        <div class="col-lg-12 vertical_center">
-          <p class="marvel_text">I'M JEREMY AND I LOVE</P>
-          <img src="assets/f_marvel/marvel_logo.svg" class="img-fluid" alt="Responsive image">
-          <p class="marvel_subtext">Let's talk about Marvel's Sr. Interactive Designer Position.</P>
+    <div class="hero_content container-fluid h-100">
+      <div class="row h-100 d-flex align-items-center">
+        <div class="col-lg-12">
+          <h1 class="text-white">I'm Jeremy and I love</h1>
+          <img src="assets/f_marvel/marvel_logo.svg" class="img_hero" alt="Responsive image">
+          <h2 class="text-white">Let's talk about Marvel's Sr. Interactive Designer Position.</h2>
         </div>
-    </div>
+      </div>
     </div>
 
     <div class="slant_slider">
@@ -53,29 +60,23 @@
 
   </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid _findera">
       <div class="row">
-        <div class="col-lg-7 _findera">
+        <div class="col-lg-7 d-flex align-items-center content_box_col">
 
-          <div class="text-white bg-dark">
-          <h1>Hello World</h1>
-            <p>Trump Ipsum is calling for a total and complete shutdown of Muslim text entering your website.
-            Lorem Ipsum's father was with Lee Harvey Oswald prior to Oswald's being, you know, shot. <br><br>
+          <div class="content_box_left">
+          <h1>About Me</h1>
+            <p>I'm a UX/UI Designer in the Boston area who's looking for exciting, new design opportunities in New York City.
+              I specialize in UX/UI design, interaction design, motion design, and usability testing. <br><br>
 
-            My text is long and beautiful, as, it has been well documented, are various other parts of my website.
-            When other websites give you text, they’re not sending the best.
+              Earlier this year, I was fortunate enough to survive Thanos’ snap. Now, I’m ready to join the Marvel team to
+              defeat Thanos and fight the forces of poor usability in the name of user experience. Design is my superpower.
             </p>
           </div>
 
         </div>
 
-        <div class="col-lg-5 _finderb">
-
-          <div class="w-100 h-100">
-          <img src="assets/f_marvel/marvel_thanos.png" class="img-fluid mx-auto d-block">
-          <p>We must defeat Thanos</p>
-          </div>
-
+        <div class="col-lg-5 thanos paroller" data-paroller-factor=".2" data-paroller-type="background" data-paroller-direction="vertical">
         </div>
 
       </div>

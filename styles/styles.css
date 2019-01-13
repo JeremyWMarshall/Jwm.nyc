@@ -1,94 +1,85 @@
-/*GLOBAL STYLES*/
-.content_box{
+/* Section 1: GLOBAL STYLES*/
+
+.img_hero{
+  height:15vw;
+  min-height:150px;
+  margin-bottom:20px;
 }
 
-.image_box{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+h1{
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #787878;
 }
 
-
-._findera{
-  color:#505050;
-  background-color: #f8f8f8;
+h2{
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: #787878;
 }
 
-._finderb{
-  background-color: coral;
+h3{
+  color: #787878;
 }
 
-/*Navbar  - Edits made to the Bootstrap Nav*/
-  /* The .nav-link class controls Home and Contact*/
-  .nav-link{
-  padding: 10px 25px 10px 25px ! important;
-  font-size: 17px;
-  }
-
-  .navbar-toggler{
-  margin-left: -10px;
-  margin-right: -70px;
-  border-color: rgba(0,0,0,0)! important;   /*This is for that box around the hanburger menu, bro*/
-  border-radius: 1px;
-  border-width: 1px;
-  }
-
-  .navbar-toggler:focus {
-      outline: 0! important;
-  }
-
-  .navbar-default{
-  background: rgba(0,0,0,.6) ! important;
-  letter-spacing: 4px;
-  }
-
-  /* This controls the "JEREMY MARSHALL" text */
-  .navbar .navbar-brand{
-    color:#DCDCDC;
-    font-size:17px;
-    padding-left: 25px;
-  }
-
-
-  .navbar .navbar-brand:hover{
-    color:#FFF;
-  }
-
-  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-      color: #FFFFFF ! important;
-  }
-
-  .navbar .navbar-nav li a{
-    color:#DCDCDC ! important;
-    margin-left: -9px;
-
-  }
-
-
-/*STYLES SPECIFIC TO JWM.NYC/MARVEL*/
-.marvel{
-  /* background-image: url('../img/f_marvel/marvel_bg_alt.svg'); */
-  background-image:linear-gradient(#BE2A2A, #9E2323 50%, #8F2020 80%, #B62827);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height:500px;
-  height:100vh;
+p{
+  color: #757575;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.marvel_text{
-z-index: 1;
-color: white;
-font-size:calc(12px + 1.3vw);
-letter-spacing: 3px;
-margin-bottom: 5px;
+@media (max-width: 991px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 5px ! important;
+    padding-bottom: 5px ! important;
+    line-height: 27px ! important;
+  }
 }
 
-.marvel_subtext{
-z-index: 1;
-color: white;
-font-size:calc(12px + 1.5vw);
-letter-spacing: 1px;
-margin-top: 20px;
+@media (max-width: 567px) {
+h1 {
+  font-size:1.3em;
+}
+
+h2 {
+  font-size:1.1em;
+}
+
+p {
+  font-size:1em;
+}
+}
+
+@media (max-width: 767px) {
+h1 {
+  font-size:1.5em;
+}
+
+h2 {
+  font-size:1.3em;
+}
+
+p {
+  font-size:.8em;
+}
+}
+
+@media (min-width: 768px) {
+h1 {
+  font-size:1.8em;
+}
+
+h2 {
+  font-size:1.5em;
+}
+
+p {
+  font-size:.9em;
+}
 }
 
 
@@ -113,18 +104,149 @@ margin-top: 20px;
   box-shadow: 2px 2px 35px black;
 }
 
-.hero {
-  overflow: hidden;
+  .hero {
+    overflow: hidden;
+  }
+
+  .hero_content{
+    z-index:2;
+    text-align:center;
+    position:absolute;  /*Necessary to keep page title and image above black slant*/
+  }
+
+  .content_box_col{
+    min-height:40vh;
 }
 
-.hero_content{
-  z-index:2;
-  text-align:center;
-  position:absolute;  /*Necessary to keep page title and image above black slant*/
-}
+    .content_box_left{
+      padding-left:5%;
+      padding-right:5%;
+    }
 
-.vertical_center{
-  margin-top:25vh;
-  background-color: ;
-}
-/*     background: linear-gradient(90deg, black 50%, #333232 80%, black 95%);
+    @media (min-width: 1366px) {
+    .content_box_left{
+      padding-left:10%;
+      padding-right:15%;
+    }
+    }
+
+    .image_box{
+    }
+
+
+  ._findera{
+    color:#505050;
+    background-image:linear-gradient(-10deg, #f8f8f8 30%, #ffffff 50%, #f8f8f8 60%);
+  }
+
+  ._finderb{
+    background-color: coral;
+  }
+
+
+
+  /*Navbar  - Edits made to the Bootstrap Nav*/
+
+  .navbar{
+    padding:5px;
+  }
+
+  /* The .nav-link class controls Home and Contact*/
+  .nav-link{
+  /* padding: 10px 25px 10px 25px ! important;*/
+  padding: 0px 25px 0px 25px ! important;
+  font-size: 14px;
+  }
+
+  .navbar-toggler{
+  margin-left: -10px;
+  margin-right: -70px;
+  border-color: rgba(0,0,0,0)! important;   /*This is for that box around the hanburger menu, bro*/
+  border-radius: 1px;
+  border-width: 1px;
+  }
+
+  .navbar-toggler:focus {
+    outline: 0! important;
+  }
+
+  .navbar-default{
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background: rgba(0,0,0,.95) ! important;
+  letter-spacing: 2px;
+  }
+
+
+  /* This controls the "JEREMY MARSHALL" text */
+  .navbar .navbar-brand{
+    color:#D4D4D4;
+    font-size:14px;
+    padding-left: 25px;
+  }
+
+
+  .navbar .navbar-brand:hover{
+    color:#FFF;
+  }
+
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #FFFFFF ! important;
+  }
+
+  .navbar .navbar-nav li a{
+    color:#DCDCDC ! important;
+    margin-left: -9px;
+
+  }
+
+
+  /* Section 1: Home page*/
+  /* Section 2: Article Template page*/
+  /* Section 3: BDC HP Redesign page*/
+  /* Section 4: Call Connect page*/
+  /* Section 5: Slayer page*/
+
+
+/* Section 6: Marvel page*/
+  .marvel{
+    background-image: url('../assets/f_marvel/Endgame.png');
+    /*background-image:linear-gradient(#BE2A2A, #9E2323 50%, #8F2020 80%, #B62827);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:500px;
+    height:100vh;
+  }
+
+  .marvel_text{
+  z-index: 1;
+  color: white;
+  font-size:calc(12px + 1.3vw);
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+
+  }
+
+  .marvel_subtext{
+  z-index: 1;
+  color: white;
+  font-size:calc(12px + 1.5vw);
+  letter-spacing: 1px;
+  margin-top: 20px;
+  }
+
+.thanos{
+  background-image:url("../assets/f_marvel/marvel_thanos.png");
+  background-size: 130%;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  height:50vh;
+  }
+
+
+/*     background: linear-gradient(90deg, black 50%, #333232 80%, black 95%);*/
+
+
+/* Section 7: Contact page*/
+/* Section 8: 404 page*/

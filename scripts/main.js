@@ -20,6 +20,13 @@ var _positions = [
   }
 ]
 
+$(".paroller, [data-paroller-factor]").paroller({
+    factor: 0.3,            // multiplier for scrolling speed and offset
+    type: 'foreground',     // background, foreground
+    direction: 'horizontal' // vertical, horizontal
+});
+
+
 resize();
 initMovingElements();
 
